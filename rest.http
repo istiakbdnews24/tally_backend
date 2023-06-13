@@ -1,0 +1,144 @@
+
+### GET a candidate by candidateid
+GET http://localhost:4000/candidatedataedit/1032
+
+### Create a product
+POST http://localhost:4000/addelectionname
+Content-Type: application/json
+
+{
+  "banglaelectionname": "তিন সিটি করপোরেশনের ভোটের ফল",
+  "englishelectionname": "RESULTS OF THE THREE CITY CORPORATION POLLS",
+}
+
+### GET a candidate by electionid
+GET http://localhost:4000/candidatedataedit/5
+
+### Update candidate by electionid
+PATCH http://localhost:4000/dimensional2api/9
+Content-Type: application/json
+
+{
+  "electionName": "Updated Election Name",
+  "constitution": "Updated Constitution",
+  "candidate": "Updated Candidate"
+}
+
+
+### Update a electionname, constitution, candidate by electionid
+GET http://localhost:4000/dimensional2api/9
+Content-Type: application/json
+
+{
+    "electiondata": [
+        {
+            "_id": "64726693a9cbb6ffc5080a6d",
+            "banglaelectionname": "গাজীপুর নির্বাচন 2023",
+            "englishelectionname": "Gazipur City Polls 2023",
+            "statusfordisplay": 1,
+            "createdAt": "2023-05-27T20:22:43.416Z",
+            "electionid": 10,
+            "__v": 0
+        }
+    ],
+    "candidateindividualdata": [
+        {
+            "_id": "646e1141349a7f97bffb693d",
+            "electionid": "10",
+            "constitutionid": "30",
+            "candidateid": "1040",
+            "candidatenamebangla": "Sarker Shahnoor Islam",
+            "partysymbol": "https://drive.google.com/uc?id=1Ai2MI25EezrDrKuX-MvnTrZ9gIHlrbLO",
+            "totalvote": 23265,
+            "date": "2023-05-24T13:29:37.388Z",
+            "__v": 0
+        },
+        {
+            "_id": "646e1252349a7f97bffb693f",
+            "electionid": "10",
+            "constitutionid": "30",
+            "candidateid": "1041",
+            "candidatenamebangla": "Zayda Khatun",
+            "partysymbol": "https://drive.google.com/uc?id=1qseepYrX3Rs_-a50KuEdiA4OLqb5ygg_",
+            "totalvote": 2389348,
+            "date": "2023-05-24T13:34:10.961Z",
+            "__v": 0
+        },
+        {
+            "_id": "646e1298349a7f97bffb6941",
+            "electionid": "10",
+            "constitutionid": "30",
+            "candidateid": "1042",
+            "candidatenamebangla": "Azmat Ulla Khan",
+            "partysymbol": "https://drive.google.com/uc?id=1TgILrngT-99pry5xijV-JlMJUxizr1Du",
+            "totalvote": 222737,
+            "date": "2023-05-24T13:35:20.334Z",
+            "__v": 0
+        },
+        {
+            "_id": "6470ee57e760a6dcb5007b39",
+            "electionid": "10",
+            "constitutionid": "30",
+            "candidateid": "1043",
+            "candidatenamebangla": "Gazi Ataur Rahman",
+            "partysymbol": "https://drive.google.com/uc?id=1Yr6RVCpZZi60ExxZmIj7CESGM1huzQP5",
+            "totalvote": 45353,
+            "date": "2023-05-26T17:37:27.144Z",
+            "__v": 0
+        }
+    ],
+    "constitutions": [
+        {
+            "_id": "646e01f3349a7f97bffb68d5",
+            "electionid": "10",
+            "constitutionid": "30",
+            "banglaconstitutionname": "গাজীপুর সিটি নির্বাচন",
+            "totalcenter": "480",
+            "obtainedcenter": "480",
+            "sortingorder": "desc",
+            "date": "2023-05-24T12:24:19.950Z",
+            "__v": 0
+        }
+    ]
+}
+
+
+
+### 404 route Not Found
+GET http://localhost:4000/abc_xyz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hrXWgw4Q127uqZJ3
